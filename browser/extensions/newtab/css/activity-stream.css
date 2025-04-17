@@ -315,6 +315,9 @@ input {
 .icon.icon-thumbs-down {
   background-image: url("chrome://global/skin/icons/thumbs-down-20.svg");
 }
+.icon.icon-device-phone {
+  background-image: url("chrome://browser/skin/device-phone.svg");
+}
 
 :root {
   height: 100%;
@@ -2970,6 +2973,23 @@ main section {
   margin-inline-end: 5px;
 }
 
+@media (min-width: 1122px) {
+  .has-mobile-download-promo .weather {
+    inset-inline-start: calc(var(--space-xlarge) + 32px + var(--space-large));
+  }
+}
+@media (min-width: 1122px) {
+  .has-mobile-download-promo.layout-variant-a .weather {
+    inset-inline-start: calc(56px + var(--space-medium));
+  }
+}
+@media (min-width: 1122px) {
+  .has-mobile-download-promo.layout-variant-b .weather {
+    inset-inline-start: auto;
+    inset-inline-end: calc(72px + var(--space-medium));
+  }
+}
+
 .no-search.layout-variant-b .weather {
   inset-inline-end: 20px;
 }
@@ -3535,6 +3555,64 @@ main section {
 .layout-variant-b .weatherSponsorText span {
     inset-block-start: unset;
     position: relative;
+  }
+}
+
+.mobileDownloadPromoWrapper {
+  display: none;
+  height: 55px;
+}
+.mobileDownloadPromoWrapper.is-tall {
+  height: 74px;
+}
+@media (min-width: 1122px) {
+  .mobileDownloadPromoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset-inline-start: var(--space-xlarge);
+    inset-block-start: var(--space-xlarge);
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    z-index: 1;
+  }
+}
+@media (min-width: 1122px) {
+  .layout-variant-b .mobileDownloadPromoWrapper {
+    inset-inline-start: auto;
+    inset-inline-end: 40px;
+    inset-block-start: 40px;
+  }
+}
+@media (min-width: 1122px) {
+  .layout-variant-a .mobileDownloadPromoWrapper {
+    inset-inline-start: 24px;
+    inset-block-start: 24px;
+  }
+}
+
+.mobile-download-promo {
+  width: 32px;
+  height: 32px;
+  appearance: none;
+  border: 0;
+  border-radius: var(--border-radius-small);
+  padding: 0;
+  cursor: pointer;
+}
+.mobile-download-promo:hover {
+  background-color: var(--button-background-color-ghost-hover);
+}
+.mobile-download-promo:hover:active {
+  background-color: var(--button-background-color-ghost-active);
+}
+.lightWallpaper .mobile-download-promo, .darkWallpaper .mobile-download-promo {
+  background-color: var(--newtab-weather-background-color);
+}
+@media (prefers-contrast) {
+  .lightWallpaper .mobile-download-promo, .darkWallpaper .mobile-download-promo {
+    background-color: var(--background-color-box);
   }
 }
 
@@ -7390,6 +7468,69 @@ main section {
 }
 .feature-highlight .toggle-button.isHidden {
   display: none;
+}
+
+.download-firefox-feature-highlight .icon.icon-dismiss {
+  background: transparent url("chrome://global/skin/icons/close.svg");
+  background-size: var(--size-item-small);
+  height: var(--size-item-small);
+  width: var(--size-item-small);
+  position: absolute;
+  margin: 0;
+  inset-block-start: calc(var(--space-medium) + 2px);
+  inset-inline-end: calc(var(--space-medium) + 2px);
+}
+@media (prefers-color-scheme: dark) {
+  .download-firefox-feature-highlight .icon.icon-dismiss {
+    --dark-icon-color: var(--color-gray-70);
+    color: var(--dark-icon-color);
+  }
+}
+.download-firefox-feature-highlight .icon.icon-dismiss:hover {
+  --dark-icon-hover: var(--color-gray-60);
+  color: var(--dark-icon-hover);
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal {
+  --arrow-size: 24px;
+  padding: var(--space-large);
+  width: 271px;
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal .content-wrapper {
+  margin-block: 0;
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal .content-wrapper img {
+  display: block;
+  margin: 0 auto var(--space-large);
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal .message-icon {
+  display: none;
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal.inset-block-end {
+  margin-top: var(--space-xxlarge);
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal.inset-inline-start {
+  inset-inline-end: calc(var(--arrow-size) / 2 * -1 - 6px);
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal.inset-inline-start::after {
+  inset-inline-end: calc(var(--space-xxlarge) - 12px);
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal::after {
+  height: var(--arrow-size);
+  width: var(--arrow-size);
+  box-shadow: 4px -4px 6px -2px rgba(0, 0, 0, 0.15);
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal p {
+  margin: 0;
+  padding: 0;
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal .title {
+  font-weight: var(--font-weight-bold);
+  margin-block: var(--space-small);
+}
+.download-firefox-feature-highlight .feature-highlight .feature-highlight-modal .subtitle {
+  margin-block: 0;
 }
 
 .sponsored-content-highlight {

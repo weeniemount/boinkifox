@@ -71,6 +71,13 @@ pref("extensions.webextensions.remote", true);
 pref("extensions.langpacks.signatures.required", true);
 pref("xpinstall.signatures.required", true);
 
+// Enable data collection permissions.
+#ifdef NIGHTLY_BUILD
+  pref("extensions.dataCollectionPermissions.enabled", true);
+#else
+  pref("extensions.dataCollectionPermissions.enabled", false);
+#endif
+
 // Dictionary download preference
 pref("browser.dictionaries.download.url", "https://addons.mozilla.org/%LOCALE%/firefox/language-tools/");
 
@@ -480,11 +487,7 @@ pref("browser.urlbar.richSuggestions.featureGate", true);
 pref("browser.search.param.search_rich_suggestions", "fen");
 
 // Feature gate pref for weather suggestions in the urlbar.
-#ifdef NIGHTLY_BUILD
 pref("browser.urlbar.weather.featureGate", true);
-#else
-pref("browser.urlbar.weather.featureGate", false);
-#endif
 
 // Enable clipboard suggestions feature, the pref should be removed once stable.
 pref("browser.urlbar.clipboard.featureGate", false);
@@ -1818,6 +1821,12 @@ pref("browser.newtab.preload", true);
 // population (2500 / 10000).
 pref("browser.preonboarding.onTrainRolloutPopulation",  2500);
 
+// Show "Download Firefox for mobile" QR code modal on newtab
+pref("browser.newtabpage.activity-stream.mobileDownloadModal.enabled", false);
+pref("browser.newtabpage.activity-stream.mobileDownloadModal.variant-a", false);
+pref("browser.newtabpage.activity-stream.mobileDownloadModal.variant-b", false);
+pref("browser.newtabpage.activity-stream.mobileDownloadModal.variant-c", false);
+
 // Mozilla Ad Routing Service (MARS) unified ads service
 pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", true);
 pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", true);
@@ -2562,23 +2571,23 @@ pref("browser.tabs.crashReporting.sendReport", true);
 pref("browser.tabs.crashReporting.includeURL", false);
 
 // Enables the "Unload Tab" context menu item
-#ifdef NIGHTLY_BUILD
+#ifdef EARLY_BETA_OR_EARLIER
 pref("browser.tabs.unloadTabInContextMenu", true);
 #else
 pref("browser.tabs.unloadTabInContextMenu", false);
 #endif
 
-// Whether unloaded tabs (either from session restore or because
-// they are explicitly unloaded) are faded out in the tab bar.
-pref("browser.tabs.fadeOutUnloadedTabs", false);
-
 // Whether tabs that have been explicitly unloaded
 // are faded out in the tab bar.
-#ifdef NIGHTLY_BUILD
+#ifdef EARLY_BETA_OR_EARLIER
 pref("browser.tabs.fadeOutExplicitlyUnloadedTabs", true);
 #else
 pref("browser.tabs.fadeOutExplicitlyUnloadedTabs", false);
 #endif
+
+// Whether unloaded tabs (either from session restore or because
+// they are explicitly unloaded) are faded out in the tab bar.
+pref("browser.tabs.fadeOutUnloadedTabs", false);
 
 // If true, unprivileged extensions may use experimental APIs on
 // nightly and developer edition.

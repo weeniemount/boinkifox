@@ -2631,12 +2631,6 @@
   value: false
   mirror: always
 
-# Enable/disable contenteditable="plaintext-only".
-- name: dom.element.contenteditable.plaintext-only.enabled
-  type: bool
-  value: true
-  mirror: always
-
 # Whether Dialog elements emit beforetoggle and toggle events during opening and closing.
 # See https://github.com/whatwg/html/pull/10091
 - name: dom.element.dialog.toggle_events.enabled
@@ -3805,6 +3799,19 @@
 - name: dom.quotaManager.temporaryStorage.fixedLimit
   type: RelaxedAtomicInt32
   value: -1
+  mirror: always
+
+# Controls whether the quota manager updates the last access time for origins
+# in temporary storage. When enabled, the access time is updated only when an
+# origin is accessed by a quota client for the first time during a session or
+# when the last quota client stops accessing the origin. This allows eviction
+# based on the LRU policy. When disabled, the access time is stored only once
+# when the corresponding origin directory is created for the first time.
+#
+# This setting is currently intended for manual testing purposes only.
+- name: dom.quotaManager.temporaryStorage.updateOriginAccessTime
+  type: RelaxedAtomicBool
+  value: true
   mirror: always
 
 # Should we do lazy initialization of origins ?
@@ -15835,6 +15842,12 @@
   value: false
   mirror: always
 
+  # Full isolation (referrer, cookie jar, etc) of resources injected by content-scripts.
+- name: privacy.antitracking.isolateContentScriptResources
+  type: bool
+  value: false
+  mirror: always
+
 # Controls the anti-tracking webcompat features. This includes:
 # - All URL-Classifier and state partitioning skip lists (prefs and remote
 #   settings)
@@ -17570,6 +17583,13 @@
 #else
   value: 8
 #endif
+  mirror: always
+
+# If this pref and ui.touch.radious.enabled are both true, clickable content is
+# also treated as touchable content if and only if a sigle touch.
+- name: ui.touch.radius.single_touch.treat_clickable_as_touchable
+  type: bool
+  value: true
   mirror: always
 
 - name: ui.touch.radius.visitedWeight
