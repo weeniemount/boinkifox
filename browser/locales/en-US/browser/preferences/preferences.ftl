@@ -2,20 +2,20 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-removal = We no longer support the “Do Not Track” signal
+do-not-track-removal = no more "do not track" bs or whatever it originally even was
 
 global-privacy-control-description =
-    .label = Tell websites not to sell or share my data
+    .label = tell websites to gtfo with my data
     .accesskey = s
 
-non-technical-privacy-header = Website Privacy Preferences
+non-technical-privacy-header = privacy!!!!!
 
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = Global Privacy Control (GPC)
 
-settings-page-title = Settings
+settings-page-title = configurables
 
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -27,61 +27,61 @@ settings-page-title = Settings
 # Do not translate.
 search-input-box2 =
     .style = width: 15.4em
-    .placeholder = Find in Settings
+    .placeholder = Find in My Configurables!
 
-managed-notice = Your browser is being managed by your organization.
+managed-notice = your cursed company is fucking up your boink
 managed-notice-info-icon =
     .alt = Information
 
 category-list =
-    .aria-label = Categories
+    .aria-label = categories
 
-pane-general-title = General
+pane-general-title = #general
 category-general =
     .tooltiptext = { pane-general-title }
 
-pane-home-title = Home
+pane-home-title = where you find everything
 category-home =
     .tooltiptext = { pane-home-title }
 
-pane-search-title = Search
+pane-search-title = find my iphone
 category-search =
     .tooltiptext = { pane-search-title }
 
-pane-privacy-title = Privacy & Security
+pane-privacy-title = PRIVACY!!!!
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 
-pane-sync-title3 = Sync
+pane-sync-title3 = syncables
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
 
-settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-title = no
 settings-category-labs =
-    .tooltiptext = { -firefoxlabs-brand-name }
-pane-experimental-description3 = Give our experimental features a try! They’re in development and evolving, which could impact how { -brand-short-name } works.
+    .tooltiptext = no.
+pane-experimental-description3 = they exist
 
 pane-experimental-reset =
-  .label = Restore Defaults
+  .label = restore the factory
   .accesskey = R
 
-help-button-label = { -brand-short-name } Support
-addons-button-label = Extensions & Themes
+help-button-label = { -brand-short-name } get help online
+addons-button-label = VS Code extension marketplace
 
 focus-search =
     .key = f
 
 close-button =
-    .aria-label = Close
+    .aria-label = go away
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = { -brand-short-name } must restart to enable this feature.
-feature-disable-requires-restart = { -brand-short-name } must restart to disable this feature.
-should-restart-title = Restart { -brand-short-name }
-should-restart-ok = Restart { -brand-short-name } now
-cancel-no-restart-button = Cancel
-restart-later = Restart Later
+feature-enable-requires-restart = { -brand-short-name } must restart if you want this on
+feature-disable-requires-restart = { -brand-short-name } must restart if you want this GONE!!!
+should-restart-title = kill { -brand-short-name }
+should-restart-ok = kill { -brand-short-name } NOW!
+cancel-no-restart-button = not rn
+restart-later = later plz
 
 ## Extension Control Notifications
 ##
@@ -142,23 +142,23 @@ is-default = { -brand-short-name } is currently your default browser
 is-not-default = { -brand-short-name } is not your default browser
 
 set-as-my-default-browser =
-    .label = Make Default…
+    .label = use me every day
     .accesskey = D
 
 startup-restore-windows-and-tabs =
-    .label = Open previous windows and tabs
+    .label = open my previous funnys when launchin
     .accesskey = s
 
 windows-launch-on-login =
-    .label = Open { -brand-short-name } automatically when your computer starts up
+    .label = i want { -brand-short-name } on startup plz!
     .accesskey = O
-windows-launch-on-login-disabled = This preference has been disabled in Windows. To change, visit <a data-l10n-name="startup-link">Startup Apps</a> in System settings.
+windows-launch-on-login-disabled = windows. To change, visit <a data-l10n-name="startup-link">Startup Apps</a> in System settings.
 windows-launch-on-login-profile-disabled = Enable this preference by checking “{ profile-manager-use-selected.label }” in the “Choose User Profile” window.
 
 disable-extension =
-    .label = Disable Extension
+    .label = kill Extension
 
-preferences-data-migration-header = Import Browser Data
+preferences-data-migration-header = bring my date
 preferences-data-migration-description = Import bookmarks, passwords, history, and autofill data into { -brand-short-name }.
 preferences-data-migration-button =
     .label = Import Data
@@ -166,7 +166,7 @@ preferences-data-migration-button =
 
 preferences-profiles-header = Profiles
 preferences-manage-profiles-description = Each profile has separate browsing data and settings, including history, passwords, and more.
-preferences-manage-profiles-learn-more = Learn more
+preferences-manage-profiles-learn-more = find out about it
 preferences-manage-profiles-button =
   .label = Manage Profiles
 
@@ -270,15 +270,15 @@ browser-layout-show-sidebar-desc = Quickly access bookmarks, tabs from your phon
 
 ## General Section - Language & Appearance
 
-language-and-appearance-header = Language and Appearance
+language-and-appearance-header = the le <i>leangauage</i> thou speaks
 
-preferences-web-appearance-header = Website appearance
+preferences-web-appearance-header = how the geocities pages will look like
 
-preferences-web-appearance-description = Some websites adapt their color scheme based on your preferences. Choose which color scheme you’d like to use for those sites.
+preferences-web-appearance-description = some websites do the do. others dont.
 
-preferences-web-appearance-choice-auto = Automatic
-preferences-web-appearance-choice-light = Light
-preferences-web-appearance-choice-dark = Dark
+preferences-web-appearance-choice-auto = whatever your system wants ig
+preferences-web-appearance-choice-light = Flashbang
+preferences-web-appearance-choice-dark = the night
 
 preferences-web-appearance-choice-tooltip-auto =
   .title = Automatically change website backgrounds and content based on your system settings and { -brand-short-name } theme.
@@ -520,7 +520,7 @@ update-application-title = { -brand-short-name } Updates
 update-application-description = Keep { -brand-short-name } up to date for the best performance, stability, and security.
 
 # Variables:
-# $version (string) - Firefox version
+# $version (string) - Boinkifox version
 update-application-version = Version { $version } <a data-l10n-name="learn-more">What’s new</a>
 
 update-history =
@@ -701,7 +701,7 @@ choose-bookmark =
     .label = Use Bookmark…
     .accesskey = B
 
-## Home Section - Firefox Home Content Customization
+## Home Section - Boinkifox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name } Content
 home-prefs-content-description2 = Choose what content you want on your { -firefox-home-brand-name } screen.
@@ -838,7 +838,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Remove
 
-## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
+## Boinkifox account - Signed out. Note that "Sync" and "Boinkifox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Take Your Web With You
@@ -856,9 +856,9 @@ sync-signedout-account-signin3 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Download Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> to sync with your mobile device.
+sync-mobile-promo = Download Boinkifox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> to sync with your mobile device.
 
-## Firefox account - Signed in
+## Boinkifox account - Signed in
 
 sync-profile-picture-with-alt =
     .tooltiptext = Change profile picture
@@ -878,7 +878,7 @@ sync-manage-account = Manage account
     .accesskey = o
 
 ## Variables
-## $email (string) - Email used for Firefox account
+## $email (string) - Email used for Boinkifox account
 
 sync-signedin-unverified = { $email } is not verified.
 sync-signedin-login-failure = Please sign in to reconnect { $email }
@@ -973,7 +973,7 @@ sync-engine-payment-methods2 =
 
 sync-engine-addons =
     .label = Add-ons
-    .tooltiptext = Extensions and themes for Firefox desktop
+    .tooltiptext = Extensions and themes for Boinkifox desktop
     .accesskey = A
 
 sync-engine-settings =
@@ -1072,13 +1072,13 @@ windows-passkey-settings-label = Manage passkeys in system settings
 primary-password-os-auth-dialog-message-win = To create a Primary Password, enter your Windows login credentials. This helps protect the security of your accounts.
 
 # This message can be seen by trying to add a Primary Password.
-# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# The macOS strings are preceded by the operating system with "Boinkifox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = create a Primary Password
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
-# The macOS string is preceded by the operating system with "Firefox is trying to ".
+# The macOS string is preceded by the operating system with "Boinkifox is trying to ".
 autofill-creditcard-os-dialog-message = { PLATFORM () ->
     [macos] change the settings for payment methods
     *[other] { -brand-short-name } is trying to change the settings for payment methods. Use your device sign in to allow this.
@@ -1110,12 +1110,12 @@ history-header = History
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
-# "Firefox will" + "Remember history".
+# "Boinkifox will" + "Remember history".
 #
 # If this doesn't work for your language, you can translate this message:
-#   - Simply as "Firefox", moving the verb into each option.
-#     This will result in "Firefox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Firefox history settings:".
+#   - Simply as "Boinkifox", moving the verb into each option.
+#     This will result in "Boinkifox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Boinkifox history settings:".
 history-remember-label = { -brand-short-name } will
     .accesskey = w
 
@@ -1211,13 +1211,13 @@ addressbar-header = Address Bar
 
 addressbar-suggest = When using the address bar, suggest
 
-# When Firefox Suggest is enabled, this replaces `addressbar-header`.
+# When Boinkifox Suggest is enabled, this replaces `addressbar-header`.
 addressbar-header-firefox-suggest = Address Bar — { -firefox-suggest-brand-name }
 
-# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
+# When Boinkifox Suggest is enabled, this replaces `addressbar-suggest`.
 addressbar-suggest-firefox-suggest = Choose the type of suggestions that appear in the address bar.
 
-# When Firefox Suggest is enabled, a "Learn more" link appears at the end of
+# When Boinkifox Suggest is enabled, a "Learn more" link appears at the end of
 # `addressbar-suggest-firefox-suggest`.
 addressbar-locbar-firefox-suggest-learn-more = Learn more
 
@@ -1253,7 +1253,7 @@ addressbar-locbar-showtrendingsuggestions-option =
     .label = Show trending search suggestions
     .accesskey = t
 
-# Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
+# Nonsponsored suggestions refers to Boinkifox Suggest suggestions like Wikipedia.
 addressbar-locbar-suggest-nonsponsored-option =
   .label = Suggestions from { -brand-short-name }
 addressbar-locbar-suggest-nonsponsored-desc = Get suggestions from the web related to your search.
